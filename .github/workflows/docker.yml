@@ -12,7 +12,6 @@ jobs:
         uses: ilteoood/docker_buildx@master
         with:
           publish: true
-          dockerFile: docker/Dockerfile
           imageName: lianlian6/jds
           platform: linux/arm64
           dockerUser: ${{ secrets.DOCKER_USERNAME }}
